@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+              dir('/') {
+                sh 'docker build -t showmethereturn .'
+                }
+              dir('kubernetes')  {
+                sh 'kubectl apply -f showmethereturn.yaml'
+              }
+
+            }
+        }
+
+    }
+}
