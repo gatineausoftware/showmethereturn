@@ -9,7 +9,7 @@ spec:
   replicas: 1 # tells deployment to run 2 pods matching the template
   template: # create pods using pod definition in this template
     metadata:
-
+      labels: showmethereturn
     spec:
       containers:
       - name: showmethereturn
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hshowmethereturn-lb
+  name: showmethereturn-lb
 spec:
  selector:
    app: showmethereturn
