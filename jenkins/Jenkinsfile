@@ -1,6 +1,8 @@
 pipeline {
-    agent  docker {
+  agent { 
+    docker {
         image 'alexsuch/angular-cli:6.0.0-beta.7'
+    }
     }
     stages {
         stage('Build') {
