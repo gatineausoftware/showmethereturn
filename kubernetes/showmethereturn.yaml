@@ -19,7 +19,6 @@ spec:
         - containerPort: 80
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -28,6 +27,6 @@ spec:
  selector:
    app: showmethereturn
  type: LoadBalancer
-  ports:
-  - targetPort: 80
-    port: 80
+ ports:
+ - targetPort: 80
+   port: 80
