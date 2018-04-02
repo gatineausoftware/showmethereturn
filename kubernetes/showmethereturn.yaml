@@ -28,6 +28,6 @@ spec:
  selector:
    app: showmethereturn
  type: LoadBalancer
- ports:
- - port: 80
-   targetPort: 80
+  ports:
+  - targetPort: 80
+    port: 80
