@@ -7,7 +7,7 @@ pipeline {
                 sh 'docker build -t showmethereturn:v1 .'
 
               dir('kubernetes')  {
-                sh 'kubectl update -f showmethereturn.yaml'
+                sh 'kubectl apply -f showmethereturn.yaml'
               }
 
             }
