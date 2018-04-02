@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
 
-                sh 'docker build -t showmethereturn .'
+                sh 'docker build -t showmethereturn:latest .'
 
               dir('kubernetes')  {
                 sh 'kubectl create -f showmethereturn.yaml'
