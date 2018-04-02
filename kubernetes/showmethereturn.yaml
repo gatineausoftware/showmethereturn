@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: showmethereturn
-        image: showmethereturn:latest
+        image: showmethereturn:v1
         ports:
         - containerPort: 80
 
