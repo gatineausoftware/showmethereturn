@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
 
+                sh 'ng build'
                 sh 'docker build -t showmethereturn:v1 .'
 
               dir('kubernetes')  {
