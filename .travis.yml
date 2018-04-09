@@ -20,6 +20,7 @@ deploy:
   skip-cleanup: true
   github-token: $showmethereturn  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
+  local-dir: dist
   on:
     branch: master
 
