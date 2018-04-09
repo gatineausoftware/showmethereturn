@@ -13,4 +13,4 @@ before_script:
    - npm install --save @angular/animations
 
 script:
-   - ng build --prod --aot
+   - ng build --prod 
