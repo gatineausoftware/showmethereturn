@@ -9,8 +9,8 @@ branches:
 
 before_script:
    - npm install -g @angular/cli
-   - npm install --save @angular/material @angular/cd
+   - npm install --save @angular/material @angular/cdk
    - npm install --save @angular/animations
 
 script:
-   - ng build --prod 
+   - ng build --prod
